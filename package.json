@@ -1,0 +1,37 @@
+{
+  "name": "demo-hooks",
+  "version": "1.0.0",
+  "description": "Demo about reacts hooks for Loyalty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kev-landry/demo-hooks.git"
+  },
+  "author": "Kevin Landry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kev-landry/demo-hooks/issues"
+  },
+  "homepage": ".",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
