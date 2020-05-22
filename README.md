@@ -23,5 +23,12 @@ Possibiliter de créer nos propre hooks:
 
 * Les hooks permettent de réutiliser plus facilement la logique d'état.
 Donc d'externaliser son code dans une fonction réutilisable par plusieurs composants.
-* Eviter l'empilement de 10K HOC (high order componant)
+* Moins de duplication de code
+* Tester plus facilement ses fonctions
+* Eviter l'empilement de 10K HOC (high order componant) et donc plein de couches inutiles
 * Pour éviter d'utiliser des classes et se tourner plus vers une programmation fonctionelle.
+
+### Règles
+
+* Toujours au top level d'une fonction/composant
+* Autant de hooks qu'on veut

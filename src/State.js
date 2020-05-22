@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
+// Permet d'appliquer un state à notre composant
 const StateComponent = () => {
   const [isBadassColor, setIsBadassColor] = useState(true);
-  console.log(isBadassColor);
+
   return (
     <h1
       onClick={() => setIsBadassColor(!isBadassColor)}
