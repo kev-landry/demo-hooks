@@ -6,9 +6,8 @@ const EffectComponent = () => {
 
   useEffect(() => {
     const timer = setTimeout(setTime(new Date()), 1000);
-    // console.log(timer);
-    // return () => clearTimeout(timer);
-  });
+    return () => clearTimeout(timer);
+  }, []);
   return <h1>Exemple useEffect : {time.toLocaleTimeString()}</h1>;
 };
 

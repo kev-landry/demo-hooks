@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StateComponent from './State';
 import EffectComponent from './Effect';
+import ContextComponent from './Context';
 // import './App.css';
 
 class App extends Component {
@@ -10,6 +11,8 @@ class App extends Component {
         <StateComponent />
         <hr />
         <EffectComponent />
+        <hr />
+        <ContextComponent />
       </div>
     );
   }
