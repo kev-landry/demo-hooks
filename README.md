@@ -18,7 +18,7 @@
 
 Possibiliter de créer nos propre hooks:
 
-![custom hook](useKpi_hook.png)
+![custom hook](useTableKpi_hook.png)
 
 ## Pourquoi utiliser des hooks ?
 
