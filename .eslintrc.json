@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    // ...
+    "react",
+    "react-hooks",
+    "import"
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "error", // Vérifie les règles des Hooks
+    "react-hooks/exhaustive-deps": "warn", // Vérifie les tableaux de dépendances
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": false
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "expect": true
+  }
+}

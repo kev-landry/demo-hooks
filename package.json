@@ -18,6 +18,7 @@
   },
   "homepage": ".",
   "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"

@@ -1,4 +1,5 @@
 import React, { useState, useContext, createContext } from 'react';
+import './styles.css';
 
 const themes = {
   light: {
@@ -15,32 +16,16 @@ const themeContext = createContext(themes.light);
 
 const LevelFive = () => {
   const theme = useContext(themeContext);
-  const [isDark, setDark] = useState(false);
 
   console.log('theme', theme);
   return (
     <div
       style={{
-        // width: 200,
         background: theme.background,
         color: theme.foreground,
       }}
     >
-      <h5>Theme</h5>
-      <button
-        onClick={() => {
-          // setTheme('light');
-        }}
-      >
-        Light
-      </button>
-      <button
-        onClick={() => {
-          // setTheme('dark');
-        }}
-      >
-        Dark
-      </button>
+      <h5>Niveau 5 Theme</h5>
     </div>
   );
 };
@@ -67,10 +52,17 @@ const LevelTwo = () => (
 );
 
 const ContextComponent = () => {
-  // const [theme, setTheme] = useState('light');
+  const [isDark, setDark] = useState(false);
+
   return (
-    <themeContext.Provider value={themes.light}>
+    <themeContext.Provider value={isDark ? themes.dark : themes.light}>
       <div style={{ background: themes.background, color: themes.color }}>
+        <h3>Changer de theme: {isDark ? 'dark' : 'light'}</h3>
+        <input type="checkbox" id="toggle" onClick={() => setDark(!isDark)} />
+        <div>
+          <label for="toggle"></label>
+        </div>
+        <h1>Exemple Contexte</h1>
         <h1>Niveau 1</h1>
         <LevelTwo />
       </div>

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import StateComponent from './State';
 import EffectComponent from './Effect';
 import ContextComponent from './Context';
-// import './App.css';
+import MemoComponent from './Memo';
+import './styles.css';
 
 class App extends Component {
   render() {
@@ -13,6 +14,8 @@ class App extends Component {
         <EffectComponent />
         <hr />
         <ContextComponent />
+        <hr />
+        <MemoComponent />
       </div>
     );
   }
