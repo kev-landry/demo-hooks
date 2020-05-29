@@ -11,7 +11,7 @@
 
 - useState()
 - useEffect()
-- useContexte()
+- useContext()
 - etc
 
 ### Les custom hooks
